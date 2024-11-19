@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon - Home</title>
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Full-Screen Hero Section with Background Image */
+        .hero {
+            background: url('https://getwallpapers.com/wallpaper/full/1/0/e/1510826-cool-hair-salon-wallpaper-2560x1600.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* Dark overlay over the hero image */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            z-index: 2;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            z-index: 2;
+        }
+
+        .hero .btn {
+            padding: 15px 40px;
+            background-color: #ff7eb3;
+            color: white;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 30px;
+            border: none;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+
+        .hero .btn:hover {
+            background-color: #ff758c;
+            transform: translateY(-5px);
+        }
+
+        /* Services Section */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        .service-card {
+            background-color: #ff7eb3;
+            padding: 40px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .service-card p {
+            font-size: 1.1rem;
+            color: #fff;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 1.2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Glamour Salon</h1>
+        <p>Your Style, Your Confidence</p>
+        <a href="appointment.html" class="btn">Book an Appointment</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card">
+            <h3>Haircuts</h3>
+            <p>Precision cuts to match your style and personality.</p>
+        </div>
+        <div class="service-card">
+            <h3>Facials</h3>
+            <p>Relax and rejuvenate with our skin care treatments.</p>
+        </div>
+        <div class="service-card">
+            <h3>Makeup</h3>
+            <p>Get flawless makeup for any occasion.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Glamour Salon. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
